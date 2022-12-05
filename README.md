@@ -8,7 +8,7 @@ This tiny project is based on the tutorial "[ARM mbed LPC1768: Connect to Sensor
 ## Modifications of the source code
 The source code of this project can be modified by uploading the project on [Keil Studio Cloud](https://studio.keil.arm.com/). Keil Studio Cloud is using Mercurial as distributed version control: so, do all the modifications only through Keil Studio Cloud.
 
-# Upload the build file on a mbed LPC1768 board
+## Upload the build file on a mbed LPC1768 board
 Follow the following steps to upload the build file provided here on a mbed board:
 1.  Download the built file on your computer.
 1.  Connect the mbed board on an USB port of your computer.

@@ -14,5 +14,10 @@ Follow the following steps to upload the build file provided [here](https://gitl
 1.  Connect the mbed board on an USB port of your computer.
 1.  Copy and paste the `mbed_sensorthings.LPC1768.bin` file from your computer to the mbed board. The mbed board is seen as an USB stick.
 
+## Testing
+First of all, the FROST server should have already a structure representing a location where the IoT device is deployed. A basic example is given by Fraunhofer and is available [here](https://gitlab.distantaccess.com/ad4gd/mbed_sensorthings/-/blob/main/doc/demoEntities.json). Our IoT device, namely the mbed board, is sending the data to the URI `/FROST-Server/v1.1/Datastreams(1)/Observations` defined in the above JSON file. This JSON file should be sent to the FROST server through the following command:  
+`curl -X POST -H "Content-Type: application/json" -d @demoEntities.json http://x.x.x.x:8090/FROST-Server/v1.1/Things -vv` (Replace `x.x.x.x` by the IP address or the domain name of the FROST server instance.)  
+Then, you can go your preferred Web browser at the URL `x.x.x.x:8090/FROST-Server/v1.1/Datastreams(1)/Observations` to see the data sent by the mbed board. The results should be similar to the following illustration:
+
 ## Authors and acknowledgment
 Cédric Crettaz (IoT Lab), based on the work done by [Robin Luo](https://os.mbed.com/users/robinlk/).

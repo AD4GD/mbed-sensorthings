@@ -9,7 +9,7 @@ This tiny project is based on the tutorial "[ARM mbed LPC1768: Connect to Sensor
 The source code of this project can be modified by uploading the project on [Keil Studio Cloud](https://studio.keil.arm.com/). Keil Studio Cloud is using Mercurial as distributed version control: so, do all the modifications only through Keil Studio Cloud.
 
 ## Upload the build file on a mbed LPC1768 board
-Follow the following steps to upload the build file provided here on a mbed board:
+Follow the following steps to upload the build file provided [here](https://gitlab.distantaccess.com/ad4gd/mbed_sensorthings/-/blob/main/DIST/mbed_sensorthings.LPC1768.bin) on a mbed board:
 1.  Download the built file on your computer.
 1.  Connect the mbed board on an USB port of your computer.
 1.  Copy and paste the `mbed_sensorthings.LPC1768.bin` file from your computer to the mbed board. The mbed board is seen as an USB stick.

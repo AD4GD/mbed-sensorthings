@@ -1,0 +1,9 @@
+^BUILD$
+^.mbed$
+^compile_commands.json$
+^.clangd$
+^.cache$
+^LM75B$
+^EthernetNetIf$
+^C12832$
+^mbed$

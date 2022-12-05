@@ -1,0 +1,7 @@
+data/LM75B.lib.i
+data/main.cpp.i
+data/TinyHTTP.cpp.i
+data/mbed.bld.i
+data/TinyHTTP.h.i
+data/C12832.lib.i
+data/EthernetNetIf.lib.i

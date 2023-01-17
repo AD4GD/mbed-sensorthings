@@ -52,7 +52,7 @@ int postToServer(float temp)
 	// msg
 	snprintf(msg, sizeof(msg), "{\"result\":%.3f\n}", temp);
 
-	host.setName("10.81.2.66");
+	host.setName("frost.iotlab.com");
 	host.setPort(8090);
 	return httpRequest(METHOD_POST, &host, uri, head, msg);
 }

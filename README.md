@@ -17,8 +17,8 @@ Follow the following steps to upload the build file provided [here](https://gitl
 
 ## Testing
 First of all, the FROST server should have already a structure representing a location where the IoT device is deployed. A basic example is given by Fraunhofer and is available [here](https://gitlab.distantaccess.com/ad4gd/mbed_sensorthings/-/blob/main/doc/demoEntities.json). Our IoT device, namely the mbed board, is sending the data to the URI `/FROST-Server/v1.1/Datastreams(1)/Observations` defined in the above JSON file. This JSON file should be sent to the FROST server through the following command:  
-`curl -X POST -H "Content-Type: application/json" -d @demoEntities.json http://x.x.x.x:8090/FROST-Server/v1.1/Things -vv` (Replace `x.x.x.x` by the IP address or the domain name of the FROST server instance.)  
-Then, you can go with your preferred Web browser at the URL `x.x.x.x:8090/FROST-Server/v1.1/Datastreams(1)/Observations` to see the data sent by the mbed board. The results should be similar to the following illustration:  
+`curl -X POST -H "Content-Type: application/json" -d @demoEntities.json http://frost.iotlab.com:8090/FROST-Server/v1.1/Things -vv`  
+Then, you can go with your preferred Web browser at the URL of the [FROST server](http://frost.iotlab.com:8090/FROST-Server/v1.1/Datastreams(1)/Observations) to see the data sent by the mbed board. The results should be similar to the following illustration:  
 ![](doc/mbed_results.jpg)
 
 ## Authors and acknowledgment

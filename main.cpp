@@ -21,7 +21,7 @@
 * You can get the Datastream <id> from the SensorUp playground's Observation
 * API Request:/st-playground/proxy/v1.0/Datastreams(<id>)/Observations
 */
-const int DATASTREAM_ID_TEMP = 1;
+const int DATASTREAM_ID_TEMP = 7;
 /*
 * Change the ACCESS_TOKEN to the token of you SensorThigns Datastream
 * You can get the ACCESS_TOKEN from the SensorUp playground's Observation 
